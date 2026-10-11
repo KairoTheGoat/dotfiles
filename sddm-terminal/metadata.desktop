@@ -1,0 +1,9 @@
+[SddmGreeterTheme]
+Name=Terminal
+Author=kairo
+Description=Minimal terminal style
+Type=sddm-theme
+MainScript=Main.qml
+Theme-Id=terminal
+Theme-API=2.0
+QtVersion=6
