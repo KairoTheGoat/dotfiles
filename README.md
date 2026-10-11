@@ -8,3 +8,8 @@ Hyprland rice on Arch: dark, red accent, JetBrainsMono Nerd Font.
 - `sync.sh` copies the live configs here, commits and pushes
 
 Runs on top of [JaKooLit's Hyprland-Dots](https://github.com/JaKooLit/Hyprland-Dots).
+
+## Screenshots
+
+### Lock screen
+![hyprlock](screenshots/hyprlock.png)
