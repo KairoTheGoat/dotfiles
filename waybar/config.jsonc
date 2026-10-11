@@ -1,0 +1,77 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 34,
+  "spacing": 8,
+  "margin-top": 6,
+  "margin-left": 10,
+  "margin-right": 10,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["cpu", "memory", "temperature", "network", "battery", "pulseaudio", "tray", "custom/power"],
+
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "on-click": "activate",
+    "persistent-workspaces": { "*": 5 }
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%A // %d.%m.%Y}",
+    "tooltip-format": "<tt>{calendar}</tt>"
+  },
+
+  "cpu": {
+    "interval": 2,
+    "format": "CPU {usage}%"
+  },
+
+  "memory": {
+    "interval": 5,
+    "format": "RAM {percentage}%",
+    "tooltip-format": "{used:0.1f} / {total:0.1f} GiB"
+  },
+
+  "temperature": {
+    "interval": 5,
+    "critical-threshold": 80,
+    "format": "{temperatureC}°C",
+    "format-critical": "{temperatureC}°C !"
+  },
+
+  "network": {
+    "interval": 5,
+    "format-wifi": "WIFI {signalStrength}%",
+    "format-ethernet": "ETH {ipaddr}",
+    "format-disconnected": "NO NET",
+    "tooltip-format": "{ifname}  down {bandwidthDownBytes}  up {bandwidthUpBytes}"
+  },
+
+  "battery": {
+    "states": { "warning": 30, "critical": 15 },
+    "format": "BAT {capacity}%",
+    "format-charging": "BAT {capacity}% +",
+    "format-plugged": "BAT {capacity}% ="
+  },
+
+  "pulseaudio": {
+    "format": "VOL {volume}%",
+    "format-muted": "MUTED",
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "wlogout"
+  }
+}
