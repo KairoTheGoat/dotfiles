@@ -12,4 +12,4 @@ Runs on top of [JaKooLit's Hyprland-Dots](https://github.com/JaKooLit/Hyprland-D
 ## Screenshots
 
 ### Lock screen
-![hyprlock](screenshots/hyprlock.png)
+![hyprlock](hyprlock/screenshot.png)
